@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="button" value="Search" class="search-form-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Melbourne</h1>
+            <h1 class="weather-app-city" id="city">Melbourne</h1>
             <p class="weather-app-details">
               Friday 16:20, cloudy
               <br />
@@ -52,12 +53,13 @@
             Charul Bhalerao</a
           >, is
           <a href="https://github.com/bhaleraocharul" target="_blank">
-            open-sourced onGithub</a
+            open-sourced on Github</a
           >
           and hosted on
           <a href="" target="_blank">Netlify</a>
         </p>
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
