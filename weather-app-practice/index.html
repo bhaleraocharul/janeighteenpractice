@@ -15,33 +15,46 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." />
-          <input type="button" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="button" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <h1>Melbourne</h1>
-        <div>
-          <p>
-            Friday 16:20, cloudy
-            <br />
-            Humidity: 60%, Wind: 3.1km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Melbourne</h1>
+            <p class="weather-app-details">
+              Friday 16:20, cloudy
+              <br />
+              Humidity: <strong>30%</strong>, Wind: <strong>3km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">25</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>☁️ 15°C</div>
       </main>
       <footer>
         <p>
-          This is coded by
+          This project was coded by
           <a
             href="https://www.linkedin.com/in/charul-bhalerao/"
             target="_blank"
           >
-            Charul</a
-          >, code hosted on
-          <a href="https://github.com/bhaleraocharul" target="_blank">Github</a
-          >, website hosted on
+            Charul Bhalerao</a
+          >, is
+          <a href="https://github.com/bhaleraocharul" target="_blank">
+            open-sourced onGithub</a
+          >
+          and hosted on
           <a href="" target="_blank">Netlify</a>
         </p>
       </footer>
